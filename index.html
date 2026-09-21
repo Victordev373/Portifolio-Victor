@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Victor | Criador de Sites — Sites que vendem por você</title>
+  <meta name="description" content="Landing pages, sites institucionais e sites corporativos feitos para transformar visitantes em clientes pelo WhatsApp. Peça um orçamento com Victor." />
+  <meta name="author" content="Victor | Criador de Sites" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Victor | Criador de Sites — Sites que vendem por você" />
+  <meta property="og:description" content="Landing pages, sites institucionais e sites corporativos feitos para transformar visitantes em clientes pelo WhatsApp." />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="[URL DO SITE, ex: https://victordev373.github.io/portfolio/]" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230A0A0A%22/><text x=%2250%25%22 y=%2262%25%22 font-size=%2260%22 fill=%22%23FF4D1A%22 text-anchor=%22middle%22 font-family=%22monospace%22>&gt;_</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Dados estruturados para SEO (Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Victor | Criador de Sites",
+    "image": "assets/img/og-image.jpg",
+    "description": "Criação de landing pages, sites institucionais e sites corporativos.",
+    "email": "victordev373@gmail.com",
+    "telephone": "+55 93 99170-6598",
+    "areaServed": "Santarém - PA",
+    "founder": {
+      "@type": "Person",
+      "name": "Victor",
+      "alumniOf": "Fametro - Faculdade Metropolitana da Amazônia"
+    },
+    "sameAs": [
+      "https://instagram.com/victor.prgm",
+      "https://linkedin.com/in/victordev373"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Botão flutuante de WhatsApp (aparece só no celular) -->
+  <a
+    href="#"
+    class="whatsapp-flutuante"
+    id="whatsappFlutuante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Pedir orçamento pelo WhatsApp"
+    data-cta-whatsapp
+  >
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.06-1.33A10 10 0 1 0 12 2Zm0 18.2a8.15 8.15 0 0 1-4.16-1.14l-.3-.18-3.1.82.83-3.03-.2-.31A8.2 8.2 0 1 1 12 20.2Zm4.5-6.13c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42-.14 0-.3-.02-.46-.02-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03 0 1.2.87 2.36.99 2.52.12.16 1.71 2.62 4.15 3.67.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/></svg>
+  </a>
+
+  <!-- HEADER FIXO -->
+  <header class="header" id="header" data-theme="claro">
+    <div class="container header__inner">
+      <a href="#topo" class="header__logo">victor<span class="ponto">.</span>prgm</a>
+
+      <nav class="header__nav" id="nav">
+        <a href="#portfolio" class="header__link">Projetos</a>
+        <a href="#processo" class="header__link">Processo</a>
+        <a href="#faq" class="header__link">FAQ</a>
+      </nav>
+
+      <a href="#" class="btn btn--laranja header__cta" data-cta-whatsapp>Pedir orçamento</a>
+
+      <button class="header__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- ============================================================ -->
+    <!-- 1. HERO — leve: sem pin, sem canvas, só fade/translate no load -->
+    <!-- ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__imagem-wrap">
+        <img
+          src="assets/img/joao-victor-hero.jpg"
+          alt="Site profissional criado por Victor, mostrado em duotone laranja"
+          class="hero__imagem"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+
+      <div class="hero__conteudo">
+        <p class="rotulo hero__rotulo hero__anim"><span class="colchete">[</span>criador de sites<span class="colchete">]</span></p>
+        <h1 class="hero__titulo hero__anim">Sites que trabalham<br />por você 24 horas</h1>
+        <p class="hero__subtitulo hero__anim">Um site rápido e bonito faz o visitante virar cliente — e chamar você no WhatsApp.</p>
+        <a href="#" class="btn btn--mono-branco hero__anim" data-cta-whatsapp>
+          <span class="cantoneiras">
+            <span class="cantoneira cantoneira--tl"></span>
+            <span class="cantoneira cantoneira--tr"></span>
+            <span class="cantoneira cantoneira--bl"></span>
+            <span class="cantoneira cantoneira--br"></span>
+          </span>
+          Pedir orçamento
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 2. PORTFÓLIO NO DISPOSITIVO — seção mais importante           -->
+    <!-- ============================================================ -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <p class="rotulo secao__rotulo"><span class="colchete">[</span>portfólio<span class="colchete">]</span></p>
+        <h2 class="secao__titulo">Sites que eu já coloquei no ar</h2>
+
+        <div class="portfolio__dispositivo">
+          <div class="dispositivo dispositivo--notebook" id="dispositivo">
+            <div class="dispositivo__tela">
+              <video
+                class="dispositivo__print"
+                id="dispositivoVideo"
+                muted
+                loop
+                playsinline
+                preload="none"
+              ></video>
+            </div>
+            <div class="dispositivo__base" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="portfolio__abas" id="portfolioAbas" role="tablist" aria-label="Projetos"></div>
+
+        <div class="portfolio__legenda" id="portfolioLegenda"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 3. FAIXA DE SERVIÇOS (marquee)                                -->
+    <!-- ============================================================ -->
+    <section class="marquee-secao" id="servicos">
+      <div class="marquee-secao__grade" aria-hidden="true"></div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__linha marquee__linha--1" id="marqueeLinha1">
+          <span class="marquee__grupo">
+            <span>LANDING PAGE</span><span class="destaque-laranja">SITE INSTITUCIONAL</span><span>SITE CORPORATIVO</span><span class="destaque-verde">BOTÃO DE WHATSAPP</span><span>SEO LOCAL</span>
+          </span>
+          <span class="marquee__grupo">
+            <span>LANDING PAGE</span><span class="destaque-laranja">SITE INSTITUCIONAL</span><span>SITE CORPORATIVO</span><span class="destaque-verde">BOTÃO DE WHATSAPP</span><span>SEO LOCAL</span>
+          </span>
+        </div>
+        <div class="marquee__linha marquee__linha--2" id="marqueeLinha2">
+          <span class="marquee__grupo">
+            <span class="destaque-verde">MOBILE FIRST</span><span>CARREGAMENTO RÁPIDO</span><span class="destaque-laranja">LANDING PAGE</span><span>SEO LOCAL</span><span>SITE CORPORATIVO</span>
+          </span>
+          <span class="marquee__grupo">
+            <span class="destaque-verde">MOBILE FIRST</span><span>CARREGAMENTO RÁPIDO</span><span class="destaque-laranja">LANDING PAGE</span><span>SEO LOCAL</span><span>SITE CORPORATIVO</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="marquee-secao__cta">
+        <a href="#" class="btn btn--cantoneiras" data-cta-whatsapp>
+          <span class="cantoneira cantoneira--tl"></span>
+          <span class="cantoneira cantoneira--tr"></span>
+          <span class="cantoneira cantoneira--bl"></span>
+          <span class="cantoneira cantoneira--br"></span>
+          Pedir orçamento
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 4. TIPOS DE SITE (grade de imagens)                           -->
+    <!-- ============================================================ -->
+    <section class="tipos" id="tipos">
+      <div class="container">
+        <p class="rotulo secao__rotulo"><span class="colchete">[</span>o que eu faço<span class="colchete">]</span></p>
+        <h2 class="secao__titulo">Qual site o seu negócio precisa?</h2>
+
+        <div class="tipos__grade">
+          <button
+            type="button"
+            class="tipo-card"
+            data-whatsapp-msg="Landing page"
+          >
+            <div class="tipo-card__imagem-wrap">
+              <img src="assets/img/joao-victor-hero.jpg" alt="Exemplo de landing page" loading="lazy" width="600" height="750" />
+            </div>
+            <span class="rotulo tipo-card__label">Landing page</span>
+          </button>
+
+          <button
+            type="button"
+            class="tipo-card"
+            data-whatsapp-msg="Site institucional"
+          >
+            <div class="tipo-card__imagem-wrap">
+              <img src="assets/img/joao-victor-perfil.jpg" alt="Exemplo de site institucional" loading="lazy" width="600" height="750" />
+            </div>
+            <span class="rotulo tipo-card__label">Site institucional</span>
+          </button>
+
+          <button
+            type="button"
+            class="tipo-card"
+            data-whatsapp-msg="Site corporativo"
+          >
+            <div class="tipo-card__imagem-wrap">
+              <img src="assets/img/joao-victor-hero.jpg" alt="Exemplo de site corporativo" loading="lazy" width="600" height="750" />
+            </div>
+            <span class="rotulo tipo-card__label">Site corporativo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divisor claro -> escuro (faixa estática, sem JS) -->
+    <div class="divisor divisor--para-escuro" aria-hidden="true"></div>
+
+    <!-- ============================================================ -->
+    <!-- 6. PROCESSO — seção preta fixada com linha SVG em "S"         -->
+    <!-- ============================================================ -->
+    <section class="processo" id="processo">
+      <div class="processo__pin">
+        <div class="processo__cabecalho">
+          <p class="rotulo secao__rotulo secao__rotulo--claro"><span class="colchete">[</span>como funciona<span class="colchete">]</span></p>
+          <h2 class="secao__titulo secao__titulo--claro processo__titulo">Do briefing ao site no ar</h2>
+        </div>
+
+        <div class="processo__trilha" id="processoTrilha">
+        <div class="processo__linha" aria-hidden="true">
+          <div class="processo__linha-preenchida" id="processoLinha"></div>
+        </div>
+
+        <ol class="processo__etapas" id="processoEtapas">
+          <li class="etapa" data-etapa="1">
+            <span class="rotulo etapa__numero">[■] Etapa 1</span>
+            <h3 class="etapa__titulo">Conversa e briefing</h3>
+            <ul class="etapa__topicos">
+              <li>Entendo seu negócio e seu objetivo</li>
+              <li>Definimos páginas, textos e referências</li>
+            </ul>
+            <p class="etapa__prazo rotulo">Prazo: [PRAZO]</p>
+          </li>
+          <li class="etapa" data-etapa="2">
+            <span class="rotulo etapa__numero">[■] Etapa 2</span>
+            <h3 class="etapa__titulo">Layout e aprovação</h3>
+            <ul class="etapa__topicos">
+              <li>Monto o layout completo para você ver</li>
+              <li>Ajusto até ficar do jeito que você quer</li>
+            </ul>
+            <p class="etapa__prazo rotulo">Prazo: [PRAZO]</p>
+          </li>
+          <li class="etapa" data-etapa="3">
+            <span class="rotulo etapa__numero">[■] Etapa 3</span>
+            <h3 class="etapa__titulo">Desenvolvimento</h3>
+            <ul class="etapa__topicos">
+              <li>Transformo o layout em site de verdade</li>
+              <li>Testo em computador e celular</li>
+            </ul>
+            <p class="etapa__prazo rotulo">Prazo: [PRAZO]</p>
+          </li>
+          <li class="etapa" data-etapa="4">
+            <span class="rotulo etapa__numero">[■] Etapa 4</span>
+            <h3 class="etapa__titulo">Ajustes</h3>
+            <ul class="etapa__topicos">
+              <li>Você revisa e pede os últimos ajustes</li>
+              <li>Deixamos tudo certo antes de publicar</li>
+            </ul>
+            <p class="etapa__prazo rotulo">Prazo: [PRAZO]</p>
+          </li>
+          <li class="etapa" data-etapa="5">
+            <span class="rotulo etapa__numero">[■] Etapa 5</span>
+            <h3 class="etapa__titulo">Site no ar</h3>
+            <ul class="etapa__topicos">
+              <li>Publico no seu domínio</li>
+              <li>Configuro WhatsApp e formas de contato</li>
+            </ul>
+            <p class="etapa__prazo rotulo">Prazo: [PRAZO]</p>
+          </li>
+          <li class="etapa" data-etapa="6">
+            <span class="rotulo etapa__numero">[■] Etapa 6</span>
+            <h3 class="etapa__titulo">Suporte depois da entrega</h3>
+            <ul class="etapa__topicos">
+              <li>Fico disponível para dúvidas</li>
+              <li>Ajudo com pequenos ajustes no futuro</li>
+            </ul>
+            <p class="etapa__prazo rotulo">Prazo: [PRAZO]</p>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divisor escuro -> claro (faixa estática, sem JS) -->
+    <div class="divisor divisor--para-claro" aria-hidden="true"></div>
+
+    <!-- ============================================================ -->
+    <!-- 8. MANIFESTO + CTA                                            -->
+    <!-- ============================================================ -->
+    <section class="manifesto" id="manifesto">
+      <div class="container manifesto__container">
+        <h2 class="secao__titulo manifesto__titulo">Para quem quer vender mais</h2>
+
+        <div class="manifesto__texto" id="manifestoTexto">
+          <p>Um site profissional é o primeiro contato do seu cliente com o seu negócio. Antes de ligar, antes de visitar, a pessoa entra no seu site — e decide ali se confia em você ou procura o concorrente.</p>
+          <p>Site lento, feio ou confuso afasta cliente. Site rápido, bonito e fácil de usar passa segurança e leva a pessoa direto para o botão de WhatsApp.</p>
+          <p>Meu trabalho é construir esse caminho: do primeiro clique até a mensagem chegando no seu celular.</p>
+        </div>
+
+        <a href="#" class="btn btn--laranja manifesto__cta" data-cta-whatsapp>Quero meu site</a>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 9. QUEM FAZ SEU SITE                                          -->
+    <!-- ============================================================ -->
+    <section class="sobre" id="sobre">
+      <div class="container sobre__grid">
+        <div class="sobre__foto">
+          <img src="assets/img/joao-victor-perfil.jpg" alt="Foto de Victor, criador de sites" loading="lazy" width="480" height="480" />
+        </div>
+        <div class="sobre__conteudo">
+          <p class="rotulo secao__rotulo"><span class="colchete">[</span>quem faz<span class="colchete">]</span></p>
+          <h2 class="secao__titulo">Victor</h2>
+          <p class="sobre__texto">Formado em Análise e Desenvolvimento de Sistemas pela Fametro, construo sites pensados para um único objetivo: gerar contato de cliente.</p>
+          <p class="sobre__texto">Atendo <span data-preencher="cidade">Santarém - PA</span> e região, sempre com acompanhamento direto — sem intermediário, sem enrolação.</p>
+          <div class="sobre__links">
+            <a href="https://instagram.com/victor.prgm" target="_blank" rel="noopener noreferrer" class="sobre__link rotulo">
+              <span class="seta">›</span> Instagram
+            </a>
+            <a href="https://linkedin.com/in/victordev373" target="_blank" rel="noopener noreferrer" class="sobre__link rotulo">
+              <span class="seta">›</span> LinkedIn
+            </a>
+            <a href="#" class="sobre__link rotulo" data-cta-whatsapp>
+              <span class="seta">›</span> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 10. DEPOIMENTOS — só aparece se houver depoimentos reais      -->
+    <!-- ============================================================ -->
+    <section class="depoimentos" id="depoimentos">
+      <div class="container">
+        <div class="depoimentos__moldura">
+          <span class="cantoneira cantoneira--tl"></span>
+          <span class="cantoneira cantoneira--tr"></span>
+          <span class="cantoneira cantoneira--bl"></span>
+          <span class="cantoneira cantoneira--br"></span>
+
+          <blockquote class="depoimentos__citacao" id="depoimentosCitacao">
+            &ldquo;[DEPOIMENTO 1]&rdquo;
+          </blockquote>
+
+          <div class="depoimentos__autor" id="depoimentosAutor">
+            <img src="" alt="" class="depoimentos__autor-foto" />
+            <span class="rotulo">[NOME] — [EMPRESA]</span>
+          </div>
+
+          <div class="depoimentos__pontos" id="depoimentosPontos"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 11. FAQ                                                       -->
+    <!-- ============================================================ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <p class="rotulo secao__rotulo"><span class="colchete">[</span>dúvidas<span class="colchete">]</span></p>
+        <h2 class="secao__titulo">Perguntas frequentes</h2>
+
+        <div class="faq__lista">
+          <div class="faq__item">
+            <button class="faq__pergunta" aria-expanded="false">
+              Qual o prazo de entrega?
+              <span class="faq__icone" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__resposta"><p>[PLACEHOLDER: prazo médio de entrega]</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__pergunta" aria-expanded="false">
+              O que eu preciso enviar para começar?
+              <span class="faq__icone" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__resposta"><p>[PLACEHOLDER: lista de materiais — textos, logo, fotos etc.]</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__pergunta" aria-expanded="false">
+              Domínio e hospedagem estão incluídos?
+              <span class="faq__icone" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__resposta"><p>[PLACEHOLDER: política de domínio e hospedagem]</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__pergunta" aria-expanded="false">
+              Depois de pronto, preciso pagar manutenção?
+              <span class="faq__icone" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__resposta"><p>[PLACEHOLDER: política de manutenção]</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__pergunta" aria-expanded="false">
+              Quais formas de pagamento?
+              <span class="faq__icone" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__resposta"><p>[PLACEHOLDER: formas de pagamento aceitas]</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- 12. RODAPÉ                                                    -->
+  <!-- ============================================================ -->
+  <footer class="rodape">
+    <div class="container rodape__inner">
+      <a href="#topo" class="rodape__logo">victor<span class="ponto">.</span>prgm</a>
+
+      <div class="rodape__links">
+        <a href="https://instagram.com/victor.prgm" target="_blank" rel="noopener noreferrer" class="rotulo rodape__link">
+          <span class="seta">›</span> Instagram
+        </a>
+        <a href="https://linkedin.com/in/victordev373" target="_blank" rel="noopener noreferrer" class="rotulo rodape__link">
+          <span class="seta">›</span> LinkedIn
+        </a>
+        <a href="#" class="rotulo rodape__link" data-cta-whatsapp>
+          <span class="seta">›</span> WhatsApp
+        </a>
+        <a href="mailto:victordev373@gmail.com" class="rotulo rodape__link">
+          <span class="seta">›</span> E-mail
+        </a>
+        <a href="#topo" class="rotulo rodape__link">
+          <span class="seta">›</span> Voltar ao topo
+        </a>
+      </div>
+
+      <p class="rodape__copy rotulo">© <span id="anoAtual"></span> Victor | Criador de Sites</p>
+    </div>
+  </footer>
+
+  <!-- CDN: Lenis (scroll suave) — único "framework" de animação do site -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+
+  <script src="js/projetos.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
